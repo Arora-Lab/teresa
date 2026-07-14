@@ -1,0 +1,70 @@
+@import "tailwindcss";
+
+@theme inline {
+  /* Fallback chain: Uses Noto Serif if variable exists (vi), else uses Inter (en), else TNR */
+  --font-sans: var(--font-noto-serif, var(--font-inter, "Times New Roman")), sans-serif;
+  
+  /* Color Palette based on Teresa Design System */
+  
+  /* Primary Green */
+  --color-primary: #0B6E4F;
+  --color-primary-dark: #074a35; /* Hover states & dark accents */
+  --color-primary-medium: #0e8f67; /* Optional intermediate */
+  
+  /* Secondary Light Green */
+  --color-secondary: #DFF6EC;
+  --color-accent-soft: #DFF6EC; /* Alias to preserve component classnames */
+  
+  /* Accent Warm Gold */
+  --color-accent: #C8A951;
+  --color-gold: #C8A951; /* Alias to preserve component classnames */
+  
+  /* Neutrals */
+  --color-dark: #1F2937;
+  --color-gray: #6B7280;
+  --color-light: #F8FAFC;
+  --color-white: #FFFFFF;
+  
+  /* Legacy/Semantic Aliases used in current components */
+  --color-background: #F8FAFC; /* Map background to Light Neutral */
+  --color-surface: #FFFFFF;    /* Map surface to White */
+  --color-ivory: #FFFFFF;      /* Map ivory to White */
+  --color-text-body: #1F2937;  /* Map body text to Dark Neutral */
+  --color-text-muted: #6B7280; /* Map muted text to Gray Neutral */
+  --color-border-card: #e5e7eb; /* Standard subtle gray border */
+  --color-error: #ef4444;
+  
+  /* Component tokens */
+  --shadow-card: 0 4px 20px rgba(0, 0, 0, 0.04);
+  --radius-card: 16px; /* 2xl */
+}
+
+:root {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-text-body);
+  font-family: var(--font-sans);
+  line-height: 1.65;
+}
+
+h1 {
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+h2 {
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+h3 {
+  font-weight: 700;
+}
+
+p {
+  font-weight: 400;
+}

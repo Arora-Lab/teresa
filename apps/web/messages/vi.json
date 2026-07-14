@@ -1,0 +1,101 @@
+{
+  "Navigation": {
+    "home": "Trang Chủ",
+    "mission": "Sứ Mệnh",
+    "formation": "Thành Hình",
+    "contribute": "Đóng Góp",
+    "blog": "Chia Sẻ",
+    "contact": "Liên Hệ"
+  },
+  "Common": {
+    "organizationName": "Gia Đình Từ Thiện Terêsa - Houston, Texas",
+    "taxId": "Mã số thuế EIN 82-5471526 / 501(c)(3)",
+    "location": "Houston, Texas",
+    "phone": "(832) 898-6445",
+    "zellePhone": "832-788-4177",
+    "email": "contact@teresafamilycharity.org",
+    "address": ["Teresa Family Charity", "P.O. BOX 720280", "Houston, Texas 77272-0280"],
+    "zelleInstruction": "Xin quý ân nhân để lại số điện thoại hoặc địa chỉ trong phần Ghi chú (Add a memo) khi sử dụng Zelle để chúng tôi có thể cung cấp biên nhận khai thuế chính xác.",
+    "taxReceiptNote": "Nếu quý ân nhân cần biên nhận để khai thuế, xin liên lạc số điện thoại 832-788-4177 hoặc email contact@teresafamilycharity.org",
+    "sendChecksTo": "Mọi đóng góp xin gửi về:",
+    "zelleOr": "Hoặc có thể Zelle tại số điện thoại 832-788-4177",
+    "contactHeading": "Liên Hệ",
+    "quickLinks": "Liên Kết",
+    "donateNow": "Đóng Góp",
+    "ourMission": "Sứ Mệnh",
+    "contactUs": "Liên Hệ"
+  },
+  "Mission": {
+    "title": "Sứ mệnh",
+    "summary": "Gia Đình Từ Thiện Têrêsa tại Houston là một tổ chức phi lợi nhuận, mã số thuế EIN 82-5471526 / 501(c)(3). Sứ mệnh của Gia đình Từ Thiện Teresa là cung cấp gạo cho các cụ già neo đơn, nghèo khổ ở Việt Nam.",
+    "goal": "Our goal is to supply rice to a minimum of 1,050 elderly individuals in Vietnam who have low or no income.",
+    "eachMonth": "Each month, we provide one 10 kg bag of rice to every elderly person.",
+    "fullText": "Gia Đình Từ Thiện Terêsa - Houston, Texas cung cấp cho mỗi cụ già một bao gạo 10 ký (khoảng 20-lbs) mỗi tháng. Hội luôn cố gắng có thể giúp được ít nhất 1,050 cụ già mỗi năm. Sứ mệnh của chúng tôi là xoa dịu những khó khăn do bệnh tật thể xác và sự đau khổ về tinh thần vì tuổi già cô đơn. Chúng tôi phục vụ mọi người không phân biệt tôn giáo. Ngoài việc cung cấp gạo, chúng tôi thường xuyên đến thăm người già, trò chuyện, lắng nghe câu chuyện đời của họ, và giúp đút ăn, tắm rửa cho những người không thể tự chăm sóc. Chúng tôi biết ơn sự hỗ trợ hào phóng từ các nhà hảo tâm, đặc biệt là những người vẫn còn cha mẹ già đang sống tại các quốc gia như Việt Nam. Để gây quỹ, chúng tôi tổ chức các đêm ca nhạc giải trí, quảng cáo sứ mệnh trên đài phát thanh và truyền hình, và tích cực duy trì trang web cùng trang Facebook của Gia Đình Từ Thiện Terêsa - Houston, Texas để nâng cao nhận thức."
+  },
+  "Formation": {
+    "title": "Thành Hình",
+    "intro": "Là một tổ chức phi lợi nhuận, Gia Đình Từ Thiện Terêsa - Houston, Texas thành hình do linh cảm Con Đường Nhỏ đầy hứa hẹn mà Thánh Nữ Têrêsa Hài Đồng Giêsu nói, thể hiện lúc còn sống và đã đạt được:",
+    "quote": "“Luôn làm những việc thiện nhỏ nhất với tất cả tình thương”",
+    "outro": "thì sẽ hưởng phúc thiên đàng."
+  },
+  "Contribution": {
+    "title": "Đóng góp",
+    "intro": "Gia Đình Từ Thiện Terêsa - Houston, Texas rất mong nhận được sự đóng góp tài chính thường xuyên của quý ân nhân, như mỗi cụ già vẫn thường nói khi đại diện của Gia Đình Từ Thiện Terêsa - Houston, Texas thăm viếng.",
+    "elderlyQuote": "Cám ơn ân nhân mỗi sáng khi thức dậy, lòng không lo lắng thiếu gạo cơm.",
+    "monthly": {
+      "amount": "$7",
+      "title": "mua đủ gạo trong 1 tháng",
+      "description": "Chỉ với $7, sự đóng góp của quý ân nhân có thể giúp mua đủ gạo cho một cụ già tại Việt Nam trong 1 tháng."
+    },
+    "yearly": {
+      "amount": "$84",
+      "title": "mua đủ gạo trong 1 năm",
+      "description": "Chỉ với $84, sự đóng góp của quý ân nhân có thể giúp mua đủ gạo cho một cụ già tại Việt Nam trong 1 năm."
+    },
+    "impact": {
+      "title": "Hội luôn cố gắng có thể giúp được ít nhất 1,050 cụ già mỗi năm.",
+      "description": "Gia Đình Từ Thiện Terêsa - Houston, Texas cung cấp cho mỗi cụ già một bao gạo 10 ký (khoảng 20-lbs) mỗi tháng. Hội luôn cố gắng có thể giúp được ít nhất 1,050 cụ già mỗi năm."
+    }
+  },
+  "Blog": {
+    "title": "Chia sẻ",
+    "readMore": "Đọc tiếp",
+    "posts": {
+      "vietCulturalFest2023": {
+        "title": "Viet Cultural Fest 2023",
+        "category": "Tiệc gây quỹ",
+        "excerpt": "Gia Đình Từ Thiện Terêsa - Houston, Texas thân mời quý ân nhân và các mạnh thường quân đến tham lễ hội Viet Cultural Fest do Hội Văn Hóa Khoa Học Việt Nam tổ chức."
+      },
+      "june2023": {
+        "title": "Hội chợ – June 2023",
+        "category": "Tiệc gây quỹ",
+        "excerpt": ""
+      },
+      "riceDistribution": {
+        "title": "Hình ảnh phát gạo tại Vietnam",
+        "category": "Phát Quà",
+        "excerpt": ""
+      }
+    }
+  },
+  "Contact": {
+    "title": "Liên lạc",
+    "getInTouch": "Liên hệ với chúng tôi",
+    "intro": "Xin chào, chúng tôi rất mong được nghe ý kiến từ bạn. Xin vui lòng liên hệ với chúng tôi qua số điện thoại dưới đây, chúng tôi sẽ hồi đáp sớm nhất có thể.",
+    "form": {
+      "sendUsMessage": "Gửi tin nhắn cho chúng tôi",
+      "firstName": "Tên",
+      "lastName": "Họ",
+      "email": "Email",
+      "message": "Nội dung",
+      "submit": "Gửi tin nhắn",
+      "submitting": "Đang gửi...",
+      "success": "Đã gửi tin nhắn thành công",
+      "successDesc": "Cảm ơn bạn đã liên hệ. Chúng tôi sẽ hồi đáp trong thời gian sớm nhất.",
+      "error": "Có lỗi xảy ra khi gửi tin nhắn. Vui lòng thử lại sau."
+    }
+  },
+  "Home": {
+    "title": "Chào mừng đến với Gia Đình Từ Thiện Teresa - Houston, Texas"
+  }
+}

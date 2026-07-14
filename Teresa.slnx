@@ -1,0 +1,9 @@
+<Solution>
+  <Folder Name="/backend/">
+    <Project Path="backend/Teresa.Api/Teresa.Api.csproj" />
+    <Project Path="backend/Teresa.Application/Teresa.Application.csproj" />
+    <Project Path="backend/Teresa.Domain/Teresa.Domain.csproj" />
+    <Project Path="backend/Teresa.Infrastructure/Teresa.Infrastructure.csproj" />
+    <Project Path="backend/Teresa.Tests/Teresa.Tests.csproj" />
+  </Folder>
+</Solution>

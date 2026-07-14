@@ -1,0 +1,6 @@
+@Teresa.Api_HostAddress = http://localhost:5144
+
+GET {{Teresa.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

@@ -1,0 +1,101 @@
+{
+  "Navigation": {
+    "home": "Home",
+    "mission": "Mission",
+    "formation": "Formation",
+    "contribute": "Contribution",
+    "blog": "Blog",
+    "contact": "Contact Us"
+  },
+  "Common": {
+    "organizationName": "Teresa Family Charity",
+    "taxId": "Tax ID EIN 82-5471526 / 501(c)(3)",
+    "location": "Houston, Texas",
+    "phone": "(832) 898-6445",
+    "zellePhone": "832-788-4177",
+    "email": "contact@teresafamilycharity.org",
+    "address": ["Teresa Family Charity", "P.O. BOX 720280", "Houston, Texas 77272-0280"],
+    "zelleInstruction": "Please include your phone number or address in the memo section (Add a memo) when using Zelle so we can provide an accurate tax receipt.",
+    "taxReceiptNote": "If donors need a receipt for tax purposes, please contact us at 832-788-4177 or email contact@teresafamilycharity.org",
+    "sendChecksTo": "Please send checks to:",
+    "zelleOr": "Or you can Zelle to the phone number 832-788-4177",
+    "contactHeading": "Contact",
+    "quickLinks": "Quick Links",
+    "donateNow": "Donate Now",
+    "ourMission": "Our Mission",
+    "contactUs": "Contact Us"
+  },
+  "Mission": {
+    "title": "Mission",
+    "summary": "Teresa Family Charity in Houston, Texas is a non-profit organization, Tax ID EIN 82-5471526 / 501(c)(3). Our mission is to provide rice to elderly individuals in Vietnam.",
+    "goal": "Our goal is to supply rice to a minimum of 1,050 elderly individuals in Vietnam who have low or no income.",
+    "eachMonth": "Each month, we provide one 10 kg bag of rice to every elderly person.",
+    "fullText": "Teresa Family Charity is dedicated to providing monthly allocations of 20-lb bags of rice (approximately 10 kilograms) per person to support a minimum of 1,050 elderly individuals in Vietnam. Our purpose is to alleviate the hardships caused by physical ailments and the emotional suffering resulting from the loneliness of old age. We serve people without regard to their religious preferences or affiliations. In addition to rice provision, we regularly conduct home visits to the elderly, offering companionship, lending an ear to their life stories, and providing assistance with feeding and bathing for those unable to care for themselves. We are grateful for the generous support we receive from donors, particularly those who still have elderly parents residing in countries like Vietnam, as they recognize the value of human life from birth to the final moments. To raise funds, we organize entertaining musical evenings for donors, advertise our mission on radio and television to reach potential contributors, and actively maintain the Teresa Family Charity website and Facebook page to continuously raise awareness about the critical needs of elderly individuals in Vietnam."
+  },
+  "Formation": {
+    "title": "Formation",
+    "intro": "Teresa Charity Family is a non-profit organization, inspired by the renowned quote from St. Teresa of Lisieux’s book, The Little Way:",
+    "quote": "“Always doing the smallest right and doing it with your great love”",
+    "outro": "you will be rewarded with heaven."
+  },
+  "Contribution": {
+    "title": "Contribution",
+    "intro": "The Teresa Family Charity gratefully welcomes financial support from our generous donors. Your contributions help us provide ongoing care and resources to families and seniors in need, ensuring they continue to receive the assistance they rely on through our dedicated team.",
+    "elderlyQuote": "When the elderly receive the food, they often express their heartfelt gratitude by saying, “We deeply appreciate your generosity, as it relieves us from the concern of having no rice to eat every morning when we wake up.“",
+    "monthly": {
+      "amount": "$7",
+      "title": "one month's supply of food",
+      "description": "For only $7, your donation can make a difference by providing a month's worth of food supply for an elderly person in Vietnam."
+    },
+    "yearly": {
+      "amount": "$84",
+      "title": "one year's supply of food",
+      "description": "For only $84, your donation can make a difference by providing a year's worth of food supply for an elderly person in Vietnam."
+    },
+    "impact": {
+      "title": "1,050 elderly individuals are in need of assistance.",
+      "description": "Teresa Family Charity is dedicated to providing a monthly supply of rice to elderly individuals in Vietnam. Each person receives a 20-lb bag of rice (approximately 10 kilograms) valued at about $7. Our mission is to assist a minimum of 1,050 individuals annually, and we strive to support even more."
+    }
+  },
+  "Blog": {
+    "title": "Blog",
+    "readMore": "Read more",
+    "posts": {
+      "vietCulturalFest2023": {
+        "title": "Viet Cultural Fest 2023",
+        "category": "Fundraising",
+        "excerpt": "Teresa Family Charity cordially invites benefactors and donors to attend the Viet Cultural Fest organized by the Vietnamese Culture & Science Association."
+      },
+      "june2023": {
+        "title": "Hội chợ – June 2023",
+        "category": "Fundraising",
+        "excerpt": ""
+      },
+      "riceDistribution": {
+        "title": "Images of rice distribution in Vietnam",
+        "category": "Distribution",
+        "excerpt": ""
+      }
+    }
+  },
+  "Contact": {
+    "title": "Contact",
+    "getInTouch": "Get in touch",
+    "intro": "Hi There, we are looking forward to hearing from you. Please feel free to get in touch via the phone number below, we will get back to you as soon as possible.",
+    "form": {
+      "sendUsMessage": "Send us a message",
+      "firstName": "First name",
+      "lastName": "Last name",
+      "email": "Email",
+      "message": "Message",
+      "submit": "Submit",
+      "submitting": "Submitting...",
+      "success": "Message Sent Successfully",
+      "successDesc": "Thank you for getting in touch. We will get back to you as soon as possible.",
+      "error": "There was an error sending your message. Please try again."
+    }
+  },
+  "Home": {
+    "title": "Welcome to Teresa Family Charity - Houston, Texas"
+  }
+}

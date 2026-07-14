@@ -1,0 +1,35 @@
+# Node
+node_modules/
+.next/
+out/
+build/
+dist/
+
+# .NET
+bin/
+obj/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Environment
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDEs
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Sanity
+/apps/studio/node_modules
+/apps/studio/dist
