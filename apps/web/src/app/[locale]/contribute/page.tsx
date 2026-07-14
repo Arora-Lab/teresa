@@ -80,12 +80,16 @@ export default async function ContributePage(props: { params: Promise<{ locale: 
                 Zelle / Paypal
               </h3>
               <div className="text-text-body text-[17px] space-y-4">
-                <p className="font-semibold text-[18px] text-primary-dark">{tCommon('zelleOr')}</p>
+                <p className="font-semibold text-[18px] text-primary-dark">
+                  {tCommon('zelleOr')} <span className="whitespace-nowrap">{tCommon('zellePhone')}</span>
+                </p>
                 <div className="text-primary-dark bg-accent-soft border border-border-card p-4 rounded-[10px]">
                   {tCommon('zelleInstruction')}
                 </div>
                 <p className="text-[15px] italic mt-4 text-text-muted">
-                  {tCommon('taxReceiptNote')}
+                  {tCommon.rich('taxReceiptNote', {
+                    b: (chunks) => <strong className="font-semibold text-primary-dark not-italic">{chunks}</strong>
+                  })}
                 </p>
               </div>
             </div>
