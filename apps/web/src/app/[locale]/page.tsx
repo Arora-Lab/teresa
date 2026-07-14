@@ -3,8 +3,7 @@ import { PageHero } from '@/components/PageHero';
 import { SectionContainer } from '@/components/SectionContainer';
 import { ContentCard } from '@/components/ContentCard';
 import { Button } from '@/components/Button';
-import { DollarSign, Building } from 'lucide-react';
-import Image from 'next/image';
+import { Heart, DollarSign, Building } from 'lucide-react';
 
 export default async function Home(props: { params: Promise<{ locale: string }> }) {
   const params = await props.params;
@@ -30,7 +29,7 @@ export default async function Home(props: { params: Promise<{ locale: string }> 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 items-stretch mb-16 md:mb-24">
           <ContentCard className="flex flex-col items-center text-center">
             <div className="w-[52px] h-[52px] rounded-full bg-accent-soft flex items-center justify-center text-primary-medium mb-6 flex-shrink-0">
-              <Image src="/images/logo.png" alt="Teresa Logo" width={32} height={32} className="opacity-90" />
+              <Heart className="w-6 h-6" strokeWidth={2} />
             </div>
             <h3 className="text-[20px] md:text-[24px] font-bold text-primary-dark mb-3 leading-tight">{tMission('title')}</h3>
             <p className="text-text-muted text-[17px] leading-relaxed flex-grow">{tMission('summary')}</p>
