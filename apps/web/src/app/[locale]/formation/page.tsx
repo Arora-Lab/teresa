@@ -24,11 +24,14 @@ export default async function FormationPage(props: { params: Promise<{ locale: s
               {t('intro')}
             </p>
             
-            {/* Image placeholder for St. Therese */}
-            <div className="w-[180px] h-[180px] rounded-full overflow-hidden border-4 border-ivory shadow-card mb-8 relative">
-               <div className="absolute inset-0 bg-primary-medium/10 flex items-center justify-center">
-                  <span className="text-primary-dark/30 font-bold text-sm">Image</span>
-               </div>
+            {/* Image for St. Therese */}
+            <div className="w-[150px] h-[150px] rounded-full overflow-hidden border-4 border-ivory shadow-card mb-8 relative">
+               <Image 
+                  src="/images/st-therese.jpg" 
+                  alt="St. Therese of Lisieux" 
+                  fill 
+                  className="object-cover"
+               />
             </div>
             
             <QuoteBlock className="mb-8 w-full text-center">
