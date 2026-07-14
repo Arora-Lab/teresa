@@ -32,10 +32,10 @@ export default async function ContactPage(props: { params: Promise<{ locale: str
       <SectionContainer isOverlappingHero={true}>
         <ContentCard className="p-0 overflow-hidden max-w-[1024px] mx-auto border-0 bg-transparent shadow-none">
           
-          <div className="grid grid-cols-1 lg:grid-cols-3 bg-surface rounded-card border border-border-card shadow-card overflow-hidden">
+          <div className="grid grid-cols-1 lg:grid-cols-12 bg-surface rounded-card border border-border-card shadow-card overflow-hidden">
             
             {/* Contact Info Panel (Deep Forest Green) */}
-            <div className="relative overflow-hidden bg-primary-dark py-12 px-8 sm:px-12">
+            <div className="relative overflow-hidden bg-primary-dark py-12 px-8 sm:px-12 lg:col-span-5">
               {/* Subtle background decoration */}
               <div className="absolute top-0 left-0 w-full h-full opacity-10 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-white via-transparent to-transparent pointer-events-none"></div>
               
@@ -73,7 +73,7 @@ export default async function ContactPage(props: { params: Promise<{ locale: str
             </div>
             
             {/* Contact Form Panel (Ivory/White) */}
-            <div className="py-12 px-8 sm:px-12 lg:col-span-2 bg-ivory flex flex-col justify-center">
+            <div className="py-12 px-8 sm:px-12 lg:col-span-7 bg-ivory flex flex-col justify-center">
               <h3 className="text-[22px] font-bold text-primary-dark mb-4">{t('form.sendUsMessage')}</h3>
               <ContactForm tForm={formTranslations} />
             </div>
