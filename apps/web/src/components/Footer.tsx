@@ -18,7 +18,6 @@ export default function Footer() {
               {t('organizationName')}
             </h3>
             <p className="text-ivory/80 font-medium text-[15px]">{t('taxId')}</p>
-            <p className="text-ivory/50 mt-6 text-[14px]">&copy; {new Date().getFullYear()} {t('organizationName')}. All rights reserved.</p>
           </div>
           
           {/* Contact */}
@@ -70,6 +69,11 @@ export default function Footer() {
             </ul>
           </div>
           
+        </div>
+
+        {/* Bottom Bar */}
+        <div className="mt-16 pt-8 border-t border-primary/30 text-center md:text-left text-ivory/50 text-[14px]">
+          <p>&copy; {new Date().getFullYear()} {t('organizationName')}. All rights reserved.</p>
         </div>
       </div>
     </footer>
