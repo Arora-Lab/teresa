@@ -31,29 +31,29 @@ export default async function ContributePage(props: { params: Promise<{ locale: 
             </blockquote>
           </div>
 
-          <div className="grid grid-cols-1 gap-12 sm:grid-cols-2 lg:grid-cols-3 mt-16">
-            <div className="flex flex-col items-center text-center">
-              <div className="w-[52px] h-[52px] rounded-full bg-accent-soft flex items-center justify-center text-primary-medium mb-6">
+          <div className="grid grid-cols-1 gap-6 md:gap-8 sm:grid-cols-2 lg:grid-cols-3 mt-16">
+            <div className="flex flex-col items-center text-center bg-surface rounded-card p-6 md:p-8 border border-border-card shadow-sm">
+              <div className="w-[52px] h-[52px] rounded-full bg-accent-soft flex items-center justify-center text-primary-medium mb-6 flex-shrink-0">
                 <Calendar className="w-6 h-6" strokeWidth={2} />
               </div>
               <h3 className="text-[20px] font-bold text-primary-dark mb-3">{t('monthly.amount')} - {t('monthly.title')}</h3>
-              <p className="text-text-muted text-[17px] leading-relaxed">{t('monthly.description')}</p>
+              <p className="text-text-muted text-[16px] leading-relaxed flex-grow">{t('monthly.description')}</p>
             </div>
             
-            <div className="flex flex-col items-center text-center">
-              <div className="w-[52px] h-[52px] rounded-full bg-accent-soft flex items-center justify-center text-primary-medium mb-6">
+            <div className="flex flex-col items-center text-center bg-surface rounded-card p-6 md:p-8 border border-border-card shadow-sm">
+              <div className="w-[52px] h-[52px] rounded-full bg-accent-soft flex items-center justify-center text-primary-medium mb-6 flex-shrink-0">
                 <CalendarDays className="w-6 h-6" strokeWidth={2} />
               </div>
               <h3 className="text-[20px] font-bold text-primary-dark mb-3">{t('yearly.amount')} - {t('yearly.title')}</h3>
-              <p className="text-text-muted text-[17px] leading-relaxed">{t('yearly.description')}</p>
+              <p className="text-text-muted text-[16px] leading-relaxed flex-grow">{t('yearly.description')}</p>
             </div>
             
-            <div className="flex flex-col items-center text-center">
-              <div className="w-[52px] h-[52px] rounded-full bg-accent-soft flex items-center justify-center text-primary-medium mb-6">
+            <div className="flex flex-col items-center text-center bg-surface rounded-card p-6 md:p-8 border border-border-card shadow-sm">
+              <div className="w-[52px] h-[52px] rounded-full bg-accent-soft flex items-center justify-center text-primary-medium mb-6 flex-shrink-0">
                 <Users className="w-6 h-6" strokeWidth={2} />
               </div>
               <h3 className="text-[20px] font-bold text-primary-dark mb-3">{t('impact.title')}</h3>
-              <p className="text-text-muted text-[17px] leading-relaxed">{t('impact.description')}</p>
+              <p className="text-text-muted text-[16px] leading-relaxed flex-grow">{t('impact.description')}</p>
             </div>
           </div>
 
