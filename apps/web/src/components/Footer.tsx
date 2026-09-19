@@ -1,10 +1,12 @@
-import { useTranslations } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 import { Link } from '@/i18n/routing';
 import { Phone, Mail, MapPin } from 'lucide-react';
 import Image from 'next/image';
 
 export default function Footer() {
   const t = useTranslations('Common');
+  const locale = useLocale();
+  const logoSrc = locale === 'vi' ? '/images/logo-vi.png' : '/images/logo-en.png';
   
   return (
     <footer className="bg-primary-dark border-t border-primary text-ivory mt-auto">
@@ -14,7 +16,7 @@ export default function Footer() {
           {/* Org Info */}
           <div>
             <h3 className="text-[24px] font-bold text-white tracking-tight mb-4 flex items-center gap-2">
-              <Image src="/images/logo.png" alt="Teresa Logo" width={24} height={24} className="object-contain" />
+              <Image src={logoSrc} alt="Teresa Logo" width={36} height={36} className="object-contain" />
               {t('organizationName')}
             </h3>
             <p className="text-ivory/80 font-medium text-[15px]">{t('taxId')}</p>

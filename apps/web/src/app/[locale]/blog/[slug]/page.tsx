@@ -5,6 +5,7 @@ import { PageHero } from '@/components/PageHero';
 import { SectionContainer } from '@/components/SectionContainer';
 import { ContentCard } from '@/components/ContentCard';
 import { Button } from '@/components/Button';
+import { eventPostSlug, getGalleryImages, getLegacyBlogPost } from '@/content/blogPosts';
 
 export default async function BlogPostPage(props: {
   params: Promise<{ locale: string; slug: string }>;
@@ -13,12 +14,68 @@ export default async function BlogPostPage(props: {
   const { locale, slug } = params;
   setRequestLocale(locale);
 
-  if (slug !== 'hatGaoSeChiaV2026') {
+  const legacyPost = getLegacyBlogPost(slug);
+
+  const tCommon = await getTranslations('Common');
+  const tBlog = await getTranslations('Blog');
+
+  if (slug !== eventPostSlug && !legacyPost) {
     notFound();
   }
 
+  if (legacyPost) {
+    const galleryImages = getGalleryImages(legacyPost.galleryDir);
+
+    return (
+      <main className="flex-1 flex flex-col w-full">
+        <PageHero title={legacyPost.title} subtitle={legacyPost.excerpt} />
+
+        <SectionContainer isOverlappingHero={true} className="pb-16 md:pb-24">
+          <ContentCard className="max-w-[1040px] mx-auto">
+            <div className="max-w-[780px]">
+              <p className="text-[14px] font-bold uppercase tracking-wider text-gold mb-3">
+                {legacyPost.category}
+              </p>
+              <h2 className="text-[30px] md:text-[40px] font-bold text-primary-dark tracking-tight">
+                {legacyPost.title}
+              </h2>
+              <p className="mt-3 text-[15px] text-text-muted">{legacyPost.date}</p>
+            </div>
+
+            <div className="mt-8 space-y-5 text-[17px] md:text-[18px] text-text-body leading-relaxed max-w-[860px]">
+              {legacyPost.body.map((paragraph) => (
+                <p key={paragraph}>{paragraph}</p>
+              ))}
+            </div>
+
+            {galleryImages.length > 0 && (
+              <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+                {galleryImages.map((image, index) => (
+                  <div key={image} className="relative aspect-[4/3] overflow-hidden rounded-card bg-primary-dark/5">
+                    <Image
+                      src={image}
+                      alt={`${legacyPost.title} ${index + 1}`}
+                      fill
+                      sizes="(min-width: 1024px) 30vw, (min-width: 640px) 50vw, 100vw"
+                      className="object-cover"
+                    />
+                  </div>
+                ))}
+              </div>
+            )}
+
+            <div className="mt-10">
+              <Button variant="secondary" href={`/${locale}/blog`}>
+                {tBlog('title')}
+              </Button>
+            </div>
+          </ContentCard>
+        </SectionContainer>
+      </main>
+    );
+  }
+
   const t = await getTranslations('Event2026');
-  const tCommon = await getTranslations('Common');
   const contacts = t.raw('contacts') as string[];
 
   return (

@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from 'react';
-import { useTranslations } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 import { Link } from '@/i18n/routing';
 import LanguageSwitcher from './LanguageSwitcher';
 import Image from 'next/image';
@@ -9,7 +9,9 @@ import { Menu, X } from 'lucide-react';
 
 export default function Navigation() {
   const t = useTranslations('Navigation');
+  const locale = useLocale();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const logoSrc = locale === 'vi' ? '/images/logo-vi.png' : '/images/logo-en.png';
   
   const navLinks = [
     { href: '/', label: t('home') },
@@ -26,8 +28,8 @@ export default function Navigation() {
         <div className="flex justify-between h-[80px]">
           <div className="flex items-center">
             <Link href="/" className="flex-shrink-0 flex items-center gap-3 group">
-              <div className="w-[42px] h-[42px] relative flex items-center justify-center group-hover:scale-105 transition-transform">
-                <Image src="/images/logo.png" alt="Teresa Logo" width={38} height={38} className="object-contain" />
+              <div className="w-[54px] h-[54px] relative flex items-center justify-center group-hover:scale-105 transition-transform">
+                <Image src={logoSrc} alt="Teresa Logo" width={54} height={54} className="object-contain" />
               </div>
               <span className="font-bold text-[22px] md:text-[24px] text-primary-dark tracking-tight">
                 Teresa Family Charity
