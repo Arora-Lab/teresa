@@ -3,7 +3,8 @@ import { PageHero } from '@/components/PageHero';
 import { SectionContainer } from '@/components/SectionContainer';
 import { ContentCard } from '@/components/ContentCard';
 import { Button } from '@/components/Button';
-import { Heart, DollarSign, Building } from 'lucide-react';
+import Image from 'next/image';
+import { Heart, DollarSign, Building, CalendarDays, Clock, MapPin, Phone } from 'lucide-react';
 
 export default async function Home(props: { params: Promise<{ locale: string }> }) {
   const params = await props.params;
@@ -14,6 +15,8 @@ export default async function Home(props: { params: Promise<{ locale: string }> 
   const tMission = await getTranslations('Mission');
   const tContribution = await getTranslations('Contribution');
   const tCommon = await getTranslations('Common');
+  const tEvent = await getTranslations('Event2026');
+  const eventContacts = tEvent.raw('contacts') as string[];
   
   return (
     <main className="flex-1 flex flex-col w-full">
@@ -24,6 +27,71 @@ export default async function Home(props: { params: Promise<{ locale: string }> 
       />
 
       <SectionContainer isOverlappingHero={true} className="pb-16 md:pb-24">
+        <section className="mb-16 md:mb-24 overflow-hidden rounded-card border border-border-card bg-surface shadow-card">
+          <div className="grid gap-0 lg:grid-cols-[minmax(0,0.88fr)_minmax(0,1.12fr)]">
+            <div className="relative min-h-[420px] bg-primary-dark">
+              <Image
+                src="/images/hat-gao-se-chia-v-2026.jpeg"
+                alt={tEvent('title')}
+                fill
+                sizes="(min-width: 1024px) 42vw, 100vw"
+                className="object-contain p-3"
+                priority
+              />
+            </div>
+            <div className="p-6 md:p-10 lg:p-12 flex flex-col justify-center">
+              <p className="text-[14px] font-bold uppercase tracking-wider text-gold mb-3">
+                {tEvent('eyebrow')}
+              </p>
+              <h2 className="text-[30px] md:text-[42px] font-bold text-primary-dark tracking-tight mb-4">
+                {tEvent('title')}
+              </h2>
+              <p className="text-[17px] md:text-[18px] text-text-body leading-relaxed mb-8">
+                {tEvent('subtitle')}
+              </p>
+
+              <div className="grid gap-5 text-[16px] text-text-body">
+                <div className="flex gap-3">
+                  <CalendarDays className="mt-1 h-5 w-5 flex-shrink-0 text-primary" aria-hidden="true" />
+                  <div>
+                    <p className="font-bold text-primary-dark">{tEvent('dateLabel')}</p>
+                    <p>{tEvent('date')}</p>
+                  </div>
+                </div>
+                <div className="flex gap-3">
+                  <Clock className="mt-1 h-5 w-5 flex-shrink-0 text-primary" aria-hidden="true" />
+                  <div>
+                    <p className="font-bold text-primary-dark">{tEvent('timeLabel')}</p>
+                    <p>{tEvent('time')}</p>
+                  </div>
+                </div>
+                <div className="flex gap-3">
+                  <MapPin className="mt-1 h-5 w-5 flex-shrink-0 text-primary" aria-hidden="true" />
+                  <div>
+                    <p className="font-bold text-primary-dark">{tEvent('locationLabel')}</p>
+                    <p>{tEvent('location')}</p>
+                    <p className="text-text-muted">{tEvent('address')}</p>
+                  </div>
+                </div>
+                <div className="flex gap-3">
+                  <Phone className="mt-1 h-5 w-5 flex-shrink-0 text-primary" aria-hidden="true" />
+                  <div>
+                    <p className="font-bold text-primary-dark">{tEvent('contactLabel')}</p>
+                    {eventContacts.map((contact) => (
+                      <p key={contact}>{contact}</p>
+                    ))}
+                  </div>
+                </div>
+              </div>
+
+              <div className="mt-8">
+                <Button variant="primary" href={`/${locale}/blog/hatGaoSeChiaV2026`}>
+                  {tEvent('cta')}
+                </Button>
+              </div>
+            </div>
+          </div>
+        </section>
         
         {/* Three Column Summary Cards */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 items-stretch mb-16 md:mb-24">

@@ -61,6 +61,11 @@
     "title": "Chia sẻ",
     "readMore": "Đọc tiếp",
     "posts": {
+      "hatGaoSeChiaV2026": {
+        "title": "TIỆC GÂY QUỸ: HẠT GẠO SẺ CHIA V - 2026",
+        "category": "Tiệc gây quỹ",
+        "excerpt": "Gia Đình Từ Thiện Têrêsa- HOUSTON xin trân trọng kính mời quý vị tham dự Buổi Tiệc Gây Quỹ HẠT GẠO SẺ CHIA V nhằm cấp dưỡng gạo giúp các cụ già tại Việt Nam mà qúy vị luôn quan tâm từ bao năm qua."
+      },
       "vietCulturalFest2023": {
         "title": "Viet Cultural Fest 2023",
         "category": "Tiệc gây quỹ",
@@ -97,5 +102,30 @@
   },
   "Home": {
     "title": "Chào mừng đến với Gia Đình Từ Thiện Teresa - Houston, Texas"
+  },
+  "Event2026": {
+    "eyebrow": "Tiệc gây quỹ",
+    "title": "TIỆC GÂY QUỸ: HẠT GẠO SẺ CHIA V - 2026",
+    "subtitle": "Gia Đình Từ Thiện Têrêsa- HOUSTON xin trân trọng kính mời quý vị tham dự Buổi Tiệc Gây Quỹ HẠT GẠO SẺ CHIA V nhằm cấp dưỡng gạo giúp các cụ già tại Việt Nam mà qúy vị luôn quan tâm từ bao năm qua.",
+    "intro": "Gia Đình Từ Thiện Têrêsa- HOUSTON xin trân trọng kính mời quý vị tham dự Buổi Tiệc Gây Quỹ HẠT GẠO SẺ CHIA V nhằm cấp dưỡng gạo giúp các cụ già tại Việt Nam mà qúy vị luôn quan tâm từ bao năm qua.",
+    "aboutHeading": "Về Chúng Tôi:",
+    "aboutBody": "Gia Đình Từ Thiện Têrêsa Houston là một tổ chức từ thiện phi lợi nhuận và được khấu trừ thuế dưới quy chế 501-C(3) của chính quyền liên bang do các anh chị em cùng chung một chí hướng bác ái theo CON ĐƯỜNG NHỎ của Thánh Têrêsa Hài Đồng Giêsu hầu giúp đỡ cho các cụ già từ Bắc chí Nam tại quê nhà không phân biệt vùng miền, tôn giáo.",
+    "meaningHeading": "Ý Nghĩa Của Sự Chia Sẻ:",
+    "meaningBody": "Sự hy sinh thời giờ của quý vị để tham dự buổi Tiệc Gây Quỹ, sẽ là món quà vô giá và mang lại niềm vui cho các cụ là những bậc Cha Mẹ mà một số vì hoàn cảnh cô đơn hay không được con cái chăm sóc.",
+    "dateLabel": "Ngày",
+    "date": "Chúa Nhật, ngày 27 tháng 9 năm 2026",
+    "timeLabel": "Thời Gian",
+    "time": "5:00 PM - 10:00 PM",
+    "timeLine": "5:00 PM - 10:00 PM | Chủ Nhật, ngày 27 tháng 9 năm 2026",
+    "locationLabel": "Địa Điểm",
+    "location": "Nhà hàng Kim Sơn Bellaire",
+    "address": "10603 Bellaire Blvd, Houston, TX 77072",
+    "locationLine": "Nhà hàng Kim Sơn Bellaire - 10603 Bellaire Blvd, Houston, TX 77072",
+    "contactLabel": "Liên Lạc",
+    "contacts": ["Phượng Vũ: 713-480-8967", "Tâm Trần: 713-894-7601", "Nhàn Lê: 713-259-2919"],
+    "closing": "Toàn thể quý anh chị em thiện nguyện viên của gia đình từ thiện Teresa Houston xin trân trọng và hân hoan được đón tiếp quý vị.",
+    "body": "Gia Đình Từ Thiện Têrêsa- HOUSTON xin trân trọng kính mời quý vị tham dự Buổi Tiệc Gây Quỹ HẠT GẠO SẺ CHIA V nhằm cấp dưỡng gạo giúp các cụ già tại Việt Nam mà qúy vị luôn quan tâm từ bao năm qua.",
+    "cta": "Xem chi tiết",
+    "donationNote": ""
   }
 }
