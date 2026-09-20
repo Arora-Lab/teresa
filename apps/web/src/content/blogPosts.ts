@@ -28,7 +28,7 @@ export const legacyBlogPosts: LegacyBlogPost[] = [
       'Thứ bảy September 16, 2023 từ 10AM - 7PM.',
       'Gia đình từ thiện Teresa gian hàng #113 sẽ có bán: Cơm thịt nướng, Bánh mì thịt nướng, Chả giò, Bắp nướng, Bánh kẹp lá dứa, và các thức uống giải khát như Nước mát, Trà đào, Nước chanh, Chanh dây.',
     ],
-    heroImage: '/images/blog/viet-cultural-fest-2023/02-viet-cultural-fest-1.jpg',
+    heroImage: '/images/blog-watermarked/viet-cultural-fest-2023/02-viet-cultural-fest-1.jpg',
     galleryDir: 'viet-cultural-fest-2023',
   },
   {
@@ -40,7 +40,7 @@ export const legacyBlogPosts: LegacyBlogPost[] = [
     body: [
       'Hình ảnh sinh hoạt gây quỹ của Gia Đình Từ Thiện Teresa trong hội chợ tháng 6 năm 2023.',
     ],
-    heroImage: '/images/blog/hoi-cho-june-2023/05-img-5332.jpeg',
+    heroImage: '/images/blog-watermarked/hoi-cho-june-2023/05-img-5332.jpeg',
     galleryDir: 'hoi-cho-june-2023',
   },
   {
@@ -50,7 +50,7 @@ export const legacyBlogPosts: LegacyBlogPost[] = [
     date: 'July 4, 2023',
     excerpt: 'Images of rice distribution in Vietnam.',
     body: ['Images of rice distribution in Vietnam.'],
-    heroImage: '/images/blog/hinh-anh-phat-gao-tai-vietnam/29-img-3649.jpg',
+    heroImage: '/images/blog-watermarked/hinh-anh-phat-gao-tai-vietnam/29-img-3649.jpg',
     galleryDir: 'hinh-anh-phat-gao-tai-vietnam',
   },
   {
@@ -60,7 +60,7 @@ export const legacyBlogPosts: LegacyBlogPost[] = [
     date: 'June 8, 2018',
     excerpt: 'Hình ảnh phát quà tháng 9, 2017.',
     body: ['Hình ảnh phát quà tháng 9, 2017.'],
-    heroImage: '/images/blog/hinh-phat-qua-thang-9-2017/05-img-6300.jpg',
+    heroImage: '/images/blog-watermarked/hinh-phat-qua-thang-9-2017/05-img-6300.jpg',
     galleryDir: 'hinh-phat-qua-thang-9-2017',
   },
 ];
@@ -74,7 +74,7 @@ export function getGalleryImages(galleryDir: string | undefined) {
     return [];
   }
 
-  const absoluteDir = path.join(process.cwd(), 'public', 'images', 'blog', galleryDir);
+  const absoluteDir = path.join(process.cwd(), 'public', 'images', 'blog-watermarked', galleryDir);
   if (!fs.existsSync(absoluteDir)) {
     return [];
   }
@@ -83,5 +83,5 @@ export function getGalleryImages(galleryDir: string | undefined) {
     .readdirSync(absoluteDir)
     .filter((file) => /\.(jpe?g|png|webp)$/i.test(file))
     .sort((a, b) => a.localeCompare(b))
-    .map((file) => `/images/blog/${galleryDir}/${file}`);
+    .map((file) => `/images/blog-watermarked/${galleryDir}/${file}`);
 }

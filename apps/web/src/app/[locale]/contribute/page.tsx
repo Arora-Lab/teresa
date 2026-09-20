@@ -3,7 +3,10 @@ import { PageHero } from '@/components/PageHero';
 import { SectionContainer } from '@/components/SectionContainer';
 import { ContentCard } from '@/components/ContentCard';
 import { QuoteBlock } from '@/components/QuoteBlock';
-import { Calendar, CalendarDays, Users, Building, Smartphone } from 'lucide-react';
+import { Calendar, CalendarDays, Users, Building, Smartphone, ExternalLink } from 'lucide-react';
+
+const paypalDonateUrl =
+  'https://www.paypal.com/donate/?cmd=_s-xclick&hosted_button_id=QMNPTNKCUQMCA&ssrt=1732492491350';
 
 export default async function ContributePage(props: { params: Promise<{ locale: string }> }) {
   const params = await props.params;
@@ -77,7 +80,7 @@ export default async function ContributePage(props: { params: Promise<{ locale: 
             <div className="bg-ivory rounded-[14px] p-8 border border-border-card shadow-sm h-full">
               <h3 className="font-bold text-[22px] text-primary-dark mb-6 flex items-center gap-3">
                 <Smartphone className="w-6 h-6 text-primary-medium" strokeWidth={2} />
-                Zelle / Paypal
+                Zelle / PayPal
               </h3>
               <div className="text-text-body text-[17px] space-y-4">
                 <p className="font-semibold text-[18px] text-primary-dark">
@@ -85,6 +88,20 @@ export default async function ContributePage(props: { params: Promise<{ locale: 
                 </p>
                 <div className="text-primary-dark bg-accent-soft border border-border-card p-4 rounded-[10px]">
                   {tCommon('zelleInstruction')}
+                </div>
+                <div className="pt-2">
+                  <a
+                    href={paypalDonateUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center gap-2 rounded-xl bg-primary px-6 py-3 font-bold text-white shadow-sm transition-all duration-200 hover:-translate-y-0.5 hover:bg-primary-dark hover:shadow-md focus:outline-none"
+                  >
+                    {tCommon('paypalDonate')}
+                    <ExternalLink className="h-4 w-4" strokeWidth={2.2} />
+                  </a>
+                  <p className="mt-3 text-[15px] leading-relaxed text-text-muted">
+                    {tCommon('paypalDescription')}
+                  </p>
                 </div>
                 <p className="text-[15px] italic mt-4 text-text-muted">
                   {tCommon.rich('taxReceiptNote', {
