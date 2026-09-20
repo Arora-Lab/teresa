@@ -15,6 +15,7 @@
     "zellePhone": "832-788-4177",
     "email": "contact@teresafamilycharity.org",
     "address": ["Teresa Family Charity", "P.O. BOX 720280", "Houston, Texas 77272-0280"],
+    "zelleQrAlt": "Zelle QR code for Teresa Family Charity",
     "zelleInstruction": "Please include your phone number or address in the memo section (Add a memo) when using Zelle so we can provide an accurate tax receipt.",
     "paypalDonate": "Donate with PayPal",
     "paypalDescription": "Use PayPal for a secure online donation by credit card, debit card, or PayPal account.",
@@ -32,7 +33,14 @@
     "summary": "Teresa Family Charity in Houston, Texas is a non-profit organization, Tax ID EIN 82-5471526 / 501(c)(3). Our mission is to provide rice to elderly individuals in Vietnam.",
     "goal": "Our goal is to supply rice to a minimum of 1,050 elderly individuals in Vietnam who have low or no income.",
     "eachMonth": "Each month, we provide one 10 kg bag of rice to every elderly person.",
-    "fullText": "Teresa Family Charity is dedicated to providing monthly allocations of 20-lb bags of rice (approximately 10 kilograms) per person to support a minimum of 1,050 elderly individuals in Vietnam. Our purpose is to alleviate the hardships caused by physical ailments and the emotional suffering resulting from the loneliness of old age. We serve people without regard to their religious preferences or affiliations. In addition to rice provision, we regularly conduct home visits to the elderly, offering companionship, lending an ear to their life stories, and providing assistance with feeding and bathing for those unable to care for themselves. We are grateful for the generous support we receive from donors, particularly those who still have elderly parents residing in countries like Vietnam, as they recognize the value of human life from birth to the final moments. To raise funds, we organize entertaining musical evenings for donors, advertise our mission on radio and television to reach potential contributors, and actively maintain the Teresa Family Charity website and Facebook page to continuously raise awareness about the critical needs of elderly individuals in Vietnam."
+    "fullText": "Teresa Family Charity is dedicated to providing monthly allocations of 20-lb bags of rice (approximately 10 kilograms) per person to support a minimum of 1,050 elderly individuals in Vietnam. Our purpose is to alleviate the hardships caused by physical ailments and the emotional suffering resulting from the loneliness of old age. We serve people without regard to their religious preferences or affiliations. In addition to rice provision, we regularly conduct home visits to the elderly, offering companionship, lending an ear to their life stories, and providing assistance with feeding and bathing for those unable to care for themselves. We are grateful for the generous support we receive from donors, particularly those who still have elderly parents residing in countries like Vietnam, as they recognize the value of human life from birth to the final moments. To raise funds, we organize entertaining musical evenings for donors, advertise our mission on radio and television to reach potential contributors, and actively maintain the Teresa Family Charity website and Facebook page to continuously raise awareness about the critical needs of elderly individuals in Vietnam.",
+    "orgChartEyebrow": "Organization",
+    "orgChartTitle": "Board of Directors & Members",
+    "orgChartAlt": "Teresa Family Charity Houston board of directors and members organization chart",
+    "mapEyebrow": "Rice Distribution",
+    "mapTitle": "Where We Distribute Rice",
+    "mapDescription": "Teresa Family Charity supports elderly individuals across Vietnam, from the North to the South, through local coordinators and trusted volunteers.",
+    "mapAlt": "Map of Vietnam showing rice distribution areas including Ha Noi, Vinh, Hue, Sai Gon, and Can Tho"
   },
   "Formation": {
     "title": "Formation",

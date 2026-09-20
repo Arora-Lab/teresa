@@ -108,6 +108,15 @@ export default async function Home(props: { params: Promise<{ locale: string }> 
               <DollarSign className="w-6 h-6" strokeWidth={2} />
             </div>
             <h3 className="text-[20px] md:text-[24px] font-bold text-primary-dark mb-3 leading-tight">Zelle</h3>
+            <div className="mb-5 overflow-hidden rounded-[10px] border border-border-card bg-white p-2 shadow-sm">
+              <Image
+                src="/images/zelle-qr-2026.png"
+                alt={tCommon('zelleQrAlt')}
+                width={180}
+                height={180}
+                className="h-auto w-[180px]"
+              />
+            </div>
             <p className="text-text-muted text-[17px] leading-relaxed flex-grow">{tCommon('zellePhone')}<br /><br />{tCommon('zelleInstruction')}</p>
           </ContentCard>
 

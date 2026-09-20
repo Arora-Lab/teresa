@@ -2,8 +2,8 @@ import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { PageHero } from '@/components/PageHero';
 import { SectionContainer } from '@/components/SectionContainer';
 import { ContentCard } from '@/components/ContentCard';
-import { QuoteBlock } from '@/components/QuoteBlock';
 import { Calendar, CalendarDays, Users, Building, Smartphone, ExternalLink } from 'lucide-react';
+import Image from 'next/image';
 
 const paypalDonateUrl =
   'https://www.paypal.com/donate/?cmd=_s-xclick&hosted_button_id=QMNPTNKCUQMCA&ssrt=1732492491350';
@@ -83,11 +83,24 @@ export default async function ContributePage(props: { params: Promise<{ locale: 
                 Zelle / PayPal
               </h3>
               <div className="text-text-body text-[17px] space-y-4">
-                <p className="font-semibold text-[18px] text-primary-dark">
-                  {tCommon('zelleOr')} <span className="whitespace-nowrap">{tCommon('zellePhone')}</span>
-                </p>
-                <div className="text-primary-dark bg-accent-soft border border-border-card p-4 rounded-[10px]">
-                  {tCommon('zelleInstruction')}
+                <div className="grid gap-5 sm:grid-cols-[180px_minmax(0,1fr)] sm:items-start">
+                  <div className="overflow-hidden rounded-[10px] border border-border-card bg-white p-2 shadow-sm">
+                    <Image
+                      src="/images/zelle-qr-2026.png"
+                      alt={tCommon('zelleQrAlt')}
+                      width={180}
+                      height={180}
+                      className="h-auto w-full"
+                    />
+                  </div>
+                  <div className="space-y-4">
+                    <p className="font-semibold text-[18px] text-primary-dark">
+                      {tCommon('zelleOr')} <span className="whitespace-nowrap">{tCommon('zellePhone')}</span>
+                    </p>
+                    <div className="text-primary-dark bg-accent-soft border border-border-card p-4 rounded-[10px]">
+                      {tCommon('zelleInstruction')}
+                    </div>
+                  </div>
                 </div>
                 <div className="pt-2">
                   <a

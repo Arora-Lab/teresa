@@ -15,6 +15,7 @@
     "zellePhone": "832-788-4177",
     "email": "contact@teresafamilycharity.org",
     "address": ["Teresa Family Charity", "P.O. BOX 720280", "Houston, Texas 77272-0280"],
+    "zelleQrAlt": "Mã QR Zelle của Gia Đình Từ Thiện Teresa",
     "zelleInstruction": "Xin quý ân nhân để lại số điện thoại hoặc địa chỉ trong phần Ghi chú (Add a memo) khi sử dụng Zelle để chúng tôi có thể cung cấp biên nhận khai thuế chính xác.",
     "paypalDonate": "Đóng góp qua PayPal",
     "paypalDescription": "Quý ân nhân có thể đóng góp trực tuyến an toàn bằng thẻ tín dụng, thẻ ngân hàng, hoặc tài khoản PayPal.",
@@ -30,9 +31,16 @@
   "Mission": {
     "title": "Sứ mệnh",
     "summary": "Gia Đình Từ Thiện Têrêsa tại Houston là một tổ chức phi lợi nhuận, mã số thuế EIN 82-5471526 / 501(c)(3). Sứ mệnh của Gia đình Từ Thiện Teresa là cung cấp gạo cho các cụ già neo đơn, nghèo khổ ở Việt Nam.",
-    "goal": "Our goal is to supply rice to a minimum of 1,050 elderly individuals in Vietnam who have low or no income.",
-    "eachMonth": "Each month, we provide one 10 kg bag of rice to every elderly person.",
-    "fullText": "Gia Đình Từ Thiện Terêsa - Houston, Texas cung cấp cho mỗi cụ già một bao gạo 10 ký (khoảng 20-lbs) mỗi tháng. Hội luôn cố gắng có thể giúp được ít nhất 1,050 cụ già mỗi năm. Sứ mệnh của chúng tôi là xoa dịu những khó khăn do bệnh tật thể xác và sự đau khổ về tinh thần vì tuổi già cô đơn. Chúng tôi phục vụ mọi người không phân biệt tôn giáo. Ngoài việc cung cấp gạo, chúng tôi thường xuyên đến thăm người già, trò chuyện, lắng nghe câu chuyện đời của họ, và giúp đút ăn, tắm rửa cho những người không thể tự chăm sóc. Chúng tôi biết ơn sự hỗ trợ hào phóng từ các nhà hảo tâm, đặc biệt là những người vẫn còn cha mẹ già đang sống tại các quốc gia như Việt Nam. Để gây quỹ, chúng tôi tổ chức các đêm ca nhạc giải trí, quảng cáo sứ mệnh trên đài phát thanh và truyền hình, và tích cực duy trì trang web cùng trang Facebook của Gia Đình Từ Thiện Terêsa - Houston, Texas để nâng cao nhận thức."
+    "goal": "Mục tiêu của chúng tôi là cung cấp gạo cho ít nhất 1,050 cụ già neo đơn, nghèo khổ tại Việt Nam.",
+    "eachMonth": "Mỗi tháng, chúng tôi trao tặng một bao gạo 10 ký cho mỗi cụ.",
+    "fullText": "Gia Đình Từ Thiện Terêsa - Houston, Texas cung cấp cho mỗi cụ già một bao gạo 10 ký (khoảng 20-lbs) mỗi tháng. Hội luôn cố gắng có thể giúp được ít nhất 1,050 cụ già mỗi năm. Sứ mệnh của chúng tôi là xoa dịu những khó khăn do bệnh tật thể xác và sự đau khổ về tinh thần vì tuổi già cô đơn. Chúng tôi phục vụ mọi người không phân biệt tôn giáo. Ngoài việc cung cấp gạo, chúng tôi thường xuyên đến thăm người già, trò chuyện, lắng nghe câu chuyện đời của họ, và giúp đút ăn, tắm rửa cho những người không thể tự chăm sóc. Chúng tôi biết ơn sự hỗ trợ hào phóng từ các nhà hảo tâm, đặc biệt là những người vẫn còn cha mẹ già đang sống tại các quốc gia như Việt Nam. Để gây quỹ, chúng tôi tổ chức các đêm ca nhạc giải trí, quảng cáo sứ mệnh trên đài phát thanh và truyền hình, và tích cực duy trì trang web cùng trang Facebook của Gia Đình Từ Thiện Terêsa - Houston, Texas để nâng cao nhận thức.",
+    "orgChartEyebrow": "Tổ chức",
+    "orgChartTitle": "Ban Điều Hành & Thành Viên",
+    "orgChartAlt": "Sơ đồ ban điều hành và thành viên Gia Đình Từ Thiện Têrêsa Houston",
+    "mapEyebrow": "Phát gạo",
+    "mapTitle": "Những nơi chúng tôi phát gạo",
+    "mapDescription": "Gia Đình Từ Thiện Têrêsa giúp đỡ các cụ già tại nhiều nơi ở Việt Nam, từ Bắc chí Nam, qua các đại diện địa phương và các thiện nguyện viên đáng tin cậy.",
+    "mapAlt": "Bản đồ Việt Nam thể hiện các nơi phát gạo gồm Hà Nội, Vinh, Huế, Sài Gòn và Cần Thơ"
   },
   "Formation": {
     "title": "Thành Hình",
