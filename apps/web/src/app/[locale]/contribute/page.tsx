@@ -2,7 +2,7 @@ import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { PageHero } from '@/components/PageHero';
 import { SectionContainer } from '@/components/SectionContainer';
 import { ContentCard } from '@/components/ContentCard';
-import { Calendar, CalendarDays, Users, Building, Smartphone, ExternalLink } from 'lucide-react';
+import { Calendar, CalendarDays, Users, Building, Smartphone, ExternalLink, CreditCard } from 'lucide-react';
 import Image from 'next/image';
 
 const paypalDonateUrl =
@@ -63,7 +63,7 @@ export default async function ContributePage(props: { params: Promise<{ locale: 
           <hr className="my-16 border-border-card" />
 
           {/* Donation Methods */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 text-left">
+          <div className="grid grid-cols-1 gap-8 lg:grid-cols-3 text-left">
             
             <div className="bg-ivory rounded-[14px] p-8 border border-border-card shadow-sm h-full">
               <h3 className="font-bold text-[22px] text-primary-dark mb-6 flex items-center gap-3">
@@ -80,29 +80,37 @@ export default async function ContributePage(props: { params: Promise<{ locale: 
             <div className="bg-ivory rounded-[14px] p-8 border border-border-card shadow-sm h-full">
               <h3 className="font-bold text-[22px] text-primary-dark mb-6 flex items-center gap-3">
                 <Smartphone className="w-6 h-6 text-primary-medium" strokeWidth={2} />
-                Zelle / PayPal
+                Zelle
               </h3>
               <div className="text-text-body text-[17px] space-y-4">
-                <div className="grid gap-5 sm:grid-cols-[180px_minmax(0,1fr)] sm:items-start">
-                  <div className="overflow-hidden rounded-[10px] border border-border-card bg-white p-2 shadow-sm">
-                    <Image
-                      src="/images/zelle-qr-2026.png"
-                      alt={tCommon('zelleQrAlt')}
-                      width={180}
-                      height={180}
-                      className="h-auto w-full"
-                    />
-                  </div>
-                  <div className="space-y-4">
-                    <p className="font-semibold text-[18px] text-primary-dark">
-                      {tCommon('zelleOr')} <span className="whitespace-nowrap">{tCommon('zellePhone')}</span>
-                    </p>
-                    <div className="text-primary-dark bg-accent-soft border border-border-card p-4 rounded-[10px]">
-                      {tCommon('zelleInstruction')}
-                    </div>
-                  </div>
+                <div className="mx-auto max-w-[210px] overflow-hidden rounded-[10px] border border-border-card bg-white p-2 shadow-sm">
+                  <Image
+                    src="/images/zelle-qr-2026.png"
+                    alt={tCommon('zelleQrAlt')}
+                    width={210}
+                    height={210}
+                    className="h-auto w-full"
+                  />
                 </div>
-                <div className="pt-2">
+                <p className="font-semibold text-[18px] text-primary-dark">
+                  {tCommon('zelleOr')} <span className="whitespace-nowrap">{tCommon('zellePhone')}</span>
+                </p>
+                <div className="text-primary-dark bg-accent-soft border border-border-card p-4 rounded-[10px]">
+                  {tCommon('zelleInstruction')}
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-ivory rounded-[14px] p-8 border border-border-card shadow-sm h-full">
+              <h3 className="font-bold text-[22px] text-primary-dark mb-6 flex items-center gap-3">
+                <CreditCard className="w-6 h-6 text-primary-medium" strokeWidth={2} />
+                PayPal
+              </h3>
+              <div className="text-text-body text-[17px] space-y-5">
+                <p className="text-text-muted leading-relaxed">
+                  {tCommon('paypalDescription')}
+                </p>
+                <div>
                   <a
                     href={paypalDonateUrl}
                     target="_blank"
@@ -112,19 +120,17 @@ export default async function ContributePage(props: { params: Promise<{ locale: 
                     {tCommon('paypalDonate')}
                     <ExternalLink className="h-4 w-4" strokeWidth={2.2} />
                   </a>
-                  <p className="mt-3 text-[15px] leading-relaxed text-text-muted">
-                    {tCommon('paypalDescription')}
-                  </p>
                 </div>
-                <p className="text-[15px] italic mt-4 text-text-muted">
-                  {tCommon.rich('taxReceiptNote', {
-                    b: (chunks) => <strong className="font-semibold text-primary-dark not-italic">{chunks}</strong>
-                  })}
-                </p>
               </div>
             </div>
 
           </div>
+
+          <p className="mt-8 text-center text-[15px] italic text-text-muted">
+            {tCommon.rich('taxReceiptNote', {
+              b: (chunks) => <strong className="font-semibold text-primary-dark not-italic">{chunks}</strong>
+            })}
+          </p>
           
         </ContentCard>
       </SectionContainer>

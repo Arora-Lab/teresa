@@ -65,7 +65,7 @@ export default async function BlogPostPage(props: {
             )}
 
             <div className="mt-10">
-              <Button variant="secondary" href={`/${locale}/blog`}>
+              <Button variant="secondary" href="/blog">
                 {tBlog('title')}
               </Button>
             </div>
@@ -147,10 +147,10 @@ export default async function BlogPostPage(props: {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4 pt-2">
-              <Button variant="primary" href={`/${locale}/contribute`}>
+              <Button variant="primary" href="/contribute">
                 {tCommon('donateNow')}
               </Button>
-              <Button variant="secondary" href={`/${locale}/contact`}>
+              <Button variant="secondary" href="/contact">
                 {tCommon('contactUs')}
               </Button>
             </div>

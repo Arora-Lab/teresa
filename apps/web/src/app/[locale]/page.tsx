@@ -85,7 +85,7 @@ export default async function Home(props: { params: Promise<{ locale: string }> 
               </div>
 
               <div className="mt-8">
-                <Button variant="primary" href={`/${locale}/blog/hatGaoSeChiaV2026`}>
+                <Button variant="primary" href="/blog/hatGaoSeChiaV2026">
                   {tEvent('cta')}
                 </Button>
               </div>

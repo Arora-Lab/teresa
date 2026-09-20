@@ -1,6 +1,6 @@
 import { ButtonHTMLAttributes, ReactNode } from 'react';
 import { ArrowRight } from 'lucide-react';
-import Link from 'next/link';
+import { Link } from '@/i18n/routing';
 
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   children: ReactNode;
