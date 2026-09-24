@@ -2,11 +2,9 @@ import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { PageHero } from '@/components/PageHero';
 import { SectionContainer } from '@/components/SectionContainer';
 import { ContentCard } from '@/components/ContentCard';
+import { paypalDonateUrl } from '@/lib/donation';
 import { Calendar, CalendarDays, Users, Building, Smartphone, ExternalLink, CreditCard } from 'lucide-react';
 import Image from 'next/image';
-
-const paypalDonateUrl =
-  'https://www.paypal.com/donate/?cmd=_s-xclick&hosted_button_id=QMNPTNKCUQMCA&ssrt=1732492491350';
 
 export default async function ContributePage(props: { params: Promise<{ locale: string }> }) {
   const params = await props.params;

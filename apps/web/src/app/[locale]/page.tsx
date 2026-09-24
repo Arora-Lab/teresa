@@ -3,11 +3,9 @@ import { PageHero } from '@/components/PageHero';
 import { SectionContainer } from '@/components/SectionContainer';
 import { ContentCard } from '@/components/ContentCard';
 import { Button } from '@/components/Button';
+import { paypalDonateUrl } from '@/lib/donation';
 import Image from 'next/image';
 import { Heart, DollarSign, Building, CalendarDays, Clock, MapPin, Phone, CreditCard, ExternalLink } from 'lucide-react';
-
-const paypalDonateUrl =
-  'https://www.paypal.com/donate/?cmd=_s-xclick&hosted_button_id=QMNPTNKCUQMCA&ssrt=1732492491350';
 
 export default async function Home(props: { params: Promise<{ locale: string }> }) {
   const params = await props.params;
