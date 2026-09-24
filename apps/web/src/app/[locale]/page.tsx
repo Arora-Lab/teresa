@@ -4,7 +4,10 @@ import { SectionContainer } from '@/components/SectionContainer';
 import { ContentCard } from '@/components/ContentCard';
 import { Button } from '@/components/Button';
 import Image from 'next/image';
-import { Heart, DollarSign, Building, CalendarDays, Clock, MapPin, Phone } from 'lucide-react';
+import { Heart, DollarSign, Building, CalendarDays, Clock, MapPin, Phone, CreditCard, ExternalLink } from 'lucide-react';
+
+const paypalDonateUrl =
+  'https://www.paypal.com/donate/?cmd=_s-xclick&hosted_button_id=QMNPTNKCUQMCA&ssrt=1732492491350';
 
 export default async function Home(props: { params: Promise<{ locale: string }> }) {
   const params = await props.params;
@@ -93,8 +96,8 @@ export default async function Home(props: { params: Promise<{ locale: string }> 
           </div>
         </section>
         
-        {/* Three Column Summary Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 items-stretch mb-16 md:mb-24">
+        {/* Summary and Donation Cards */}
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6 lg:gap-8 items-stretch mb-16 md:mb-24">
           <ContentCard className="flex flex-col items-center text-center">
             <div className="w-[52px] h-[52px] rounded-full bg-accent-soft flex items-center justify-center text-primary-medium mb-6 flex-shrink-0">
               <Heart className="w-6 h-6" strokeWidth={2} />
@@ -118,6 +121,25 @@ export default async function Home(props: { params: Promise<{ locale: string }> 
               />
             </div>
             <p className="text-text-muted text-[17px] leading-relaxed flex-grow">{tCommon('zellePhone')}<br /><br />{tCommon('zelleInstruction')}</p>
+          </ContentCard>
+
+          <ContentCard className="flex flex-col items-center text-center">
+            <div className="w-[52px] h-[52px] rounded-full bg-accent-soft flex items-center justify-center text-primary-medium mb-6 flex-shrink-0">
+              <CreditCard className="w-6 h-6" strokeWidth={2} />
+            </div>
+            <h3 className="text-[20px] md:text-[24px] font-bold text-primary-dark mb-3 leading-tight">PayPal</h3>
+            <p className="text-text-muted text-[17px] leading-relaxed flex-grow mb-6">
+              {tCommon('paypalDescription')}
+            </p>
+            <a
+              href={paypalDonateUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-2 rounded-xl bg-primary px-6 py-3 font-bold text-white shadow-sm transition-all duration-200 hover:-translate-y-0.5 hover:bg-primary-dark hover:shadow-md focus:outline-none"
+            >
+              {tCommon('paypalDonate')}
+              <ExternalLink className="h-4 w-4" strokeWidth={2.2} />
+            </a>
           </ContentCard>
 
           <ContentCard className="flex flex-col items-center text-center">
