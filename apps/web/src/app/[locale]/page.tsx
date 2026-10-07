@@ -136,7 +136,7 @@ export default async function Home(props: { params: Promise<{ locale: string }> 
               <CreditCard className="w-6 h-6" strokeWidth={2} />
             </div>
             <h3 className="text-[20px] md:text-[24px] font-bold text-primary-dark mb-3 leading-tight">PayPal</h3>
-            <p className="text-text-muted text-[17px] leading-relaxed flex-grow mb-6">
+            <p className="text-text-muted text-[17px] leading-relaxed mb-6">
               {tCommon('paypalDescription')}
             </p>
             <a
