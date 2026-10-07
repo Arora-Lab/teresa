@@ -11,15 +11,15 @@ export default async function BlogPage(props: { params: Promise<{ locale: string
   const locale = params.locale;
   setRequestLocale(locale);
   const t = await getTranslations('Blog');
+  const eventPost = {
+    slug: eventPostSlug,
+    title: t(`posts.${eventPostSlug}.title`),
+    category: t(`posts.${eventPostSlug}.category`),
+    excerpt: t(`posts.${eventPostSlug}.excerpt`),
+    image: '/images/hat-gao-se-chia-v-2026.jpeg',
+    imageClassName: 'object-cover object-top',
+  };
   const posts = [
-    {
-      slug: eventPostSlug,
-      title: t(`posts.${eventPostSlug}.title`),
-      category: t(`posts.${eventPostSlug}.category`),
-      excerpt: t(`posts.${eventPostSlug}.excerpt`),
-      image: '/images/hat-gao-se-chia-v-2026.jpeg',
-      imageClassName: 'object-cover object-top',
-    },
     ...legacyBlogPosts.map((post) => ({
       slug: post.slug,
       title: post.title,
@@ -28,6 +28,7 @@ export default async function BlogPage(props: { params: Promise<{ locale: string
       image: post.heroImage,
       imageClassName: 'object-cover',
     })),
+    eventPost,
   ];
   
   return (

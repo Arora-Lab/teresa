@@ -16,6 +16,29 @@ export const eventPostSlug = 'hatGaoSeChiaV2026';
 
 export const legacyBlogPosts: LegacyBlogPost[] = [
   {
+    slug: 'loi-cam-ta-hat-gao-se-chia-v-2026',
+    title: 'Lời Cảm Tạ HẠT GẠO SẺ CHIA V',
+    category: 'Hình ảnh & tri ân',
+    date: 'October 4, 2026',
+    excerpt:
+      'Gia Đình Từ Thiện Têrêsa-Houston xin chân thành cảm tạ quý Cha, quý Thầy Phó Tế, quý Sơ, quý ân nhân, mạnh thường quân, nghệ sĩ, ca sĩ, MC, thiện nguyện viên và tất cả quý vị đã đồng hành trong Buổi Tiệc Gây Quỹ HẠT GẠO SẺ CHIA V.',
+    body: [
+      'Trong tâm tình tri ân Thiên Chúa, và nhờ lời cầu bầu của Mẹ Maria cùng Thánh Nữ Têrêsa Hài Đồng Giêsu, Gia Đình Từ Thiện Têrêsa-Houston xin chân thành cảm tạ quý Cha, quý Thầy Phó Tế, quý Sơ, quý Thượng Tọa, quý Ni Cô, quý ân nhân, mạnh thường quân, các nghệ sĩ, ca sĩ, MC, anh chị em thiện nguyện viên tại Houston và Việt Nam, cùng tất cả quý vị đã hiện diện, cầu nguyện và quảng đại đồng hành trong Buổi Tiệc Gây Quỹ HẠT GẠO SẺ CHIA V ngày 27/9/2026 và Thánh Lễ Tạ Ơn ngày 1/10/2026.',
+      'Xin tri ân hơn 500 tấm lòng đã cùng chung tay trong một đêm đầy yêu thương. Mỗi lời cầu nguyện, sự hiện diện và đóng góp của quý vị là một hạt gạo yêu thương, giúp chúng tôi tiếp tục mang những bao gạo đến các cụ già nghèo, neo đơn và gặp nhiều khó khăn tại Việt Nam.',
+      'Một bao gạo không chỉ là lương thực, mà còn là lời nhắn nhủ: “Các cụ vẫn được yêu thương, vẫn có người nhớ đến và không bị bỏ quên.”',
+      'Đặc biệt, xin cảm ơn quý vị đang theo dõi Facebook Gia Đình Từ Thiện Têrêsa-Houston, luôn Like, Share và giới thiệu hoạt động của chúng tôi đến gia đình và bạn bè. Nhờ quý vị, tình yêu thương được lan tỏa đến nhiều người hơn.',
+      'Chỉ $84/năm hoặc $7/tháng, tương đương chưa đến 25 xu mỗi ngày, chúng ta có thể giúp một cụ già có gạo trong một năm. Với chúng ta những người sinh sống ở Mỹ, đó có thể là một số tiền rất nhỏ; nhưng với một cụ già nghèo, đó là sự an tâm cho một bữa cơm và một ngày mai. Như tinh thần của Thánh Nữ Têrêsa Hài Đồng Giêsu: “Làm những việc nhỏ bé với một tình yêu lớn lao.”',
+      'Xin quý vị tiếp tục đồng hành cùng Gia Đình Từ Thiện Têrêsa-Houston bằng lời cầu nguyện, sự chia sẻ và những đóng góp tùy khả năng, để chúng ta cùng nhau trao gửi yêu thương và thắp sáng hy vọng.',
+      'Nguyện xin Thiên Chúa, qua lời chuyển cầu của Mẹ Maria và Thánh Nữ Têrêsa Hài Đồng Giêsu, ban muôn ơn lành, bình an và sức khỏe đến quý vị cùng gia đình.',
+      'Xin chân thành tri ân!',
+      'Gia Đình Từ Thiện Têrêsa-Houston',
+      'Hạt gạo sẻ chia - Trao gửi yêu thương - Thắp sáng hy vọng',
+      'Sau đây là những hình ảnh của quý ân nhân và quý thân hữu tại buổi tiệc HẠT GẠO SẺ CHIA V. Quý vị có thể xem lại hình ảnh của mình và gia đình; nếu nhận ra bạn bè hoặc người thân trong hình, xin vui lòng chia sẻ để mọi người cùng lưu giữ những kỷ niệm đẹp của buổi tiệc.',
+    ],
+    heroImage: '/images/blog-watermarked/teresa-fundraising-event-2026/001-atv-0020-fixed.jpg',
+    galleryDir: 'teresa-fundraising-event-2026',
+  },
+  {
     slug: 'viet-cultural-fest-2023',
     title: 'Viet Cultural Fest 2023',
     category: 'Tiệc gây quỹ',
